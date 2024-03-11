@@ -1,0 +1,109 @@
+.hero {
+  /* position: relative; */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.hero h1 span {
+  display: block;
+  color: #0184ff;
+}
+.hero h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #3c3e41;
+}
+.hero_btn {
+  margin-top: 10%;
+}
+.hero_btn h4 {
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #43474b;
+  font-size: 15px;
+  margin: 30px 0 0 0;
+}
+.hero_btn button {
+  margin-right: 30px;
+}
+.hero_btn i {
+  font-size: 20px;
+}
+
+.hero_btn button img {
+  /* skills images  */
+  width: 20px;
+  height: 22px;
+  vertical-align:top;
+}
+.hero .left {
+  width: 900px
+}
+/* .hero .right {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+} */
+.hero .right_img {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  /* background: linear-gradient(145deg, #cbd8e1, #e9d2d2);
+  box-shadow: 4px 4px 8px #928e8e, -4px -4px 8px #fdfbfb; */
+  border-radius: 10px;
+  height: 510px;
+  width: 510px;
+  margin-top: 20%;
+}
+.hero img {
+  /* hero image  */
+  /* position: absolute;
+  top: 0;
+  right: -20%; */
+  width: 500px;
+  height: 530px;
+}
+.btn_shadow{
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .hero .right,
+  .hero .left {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .hero .f_flex {
+    flex-direction: column;
+    /* Image on smaller screen comes above */
+    flex-direction: column-reverse;
+  }
+  .hero .right_img {
+    width: 95%;
+    display: flex;
+    margin-top: 0%;
+    height: 32vh;
+  }
+  .hero img {
+    /* position: absolute;
+    top:-18%;
+    right: 20%; */
+    width: 240px;
+    height: 250px;
+  }
+  .hero h1 {
+    font-size: 35px;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+  .btn_shadow{
+    margin-left: 20px;
+  }
+}

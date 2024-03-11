@@ -1,0 +1,15 @@
+.footer {
+    margin-top: 60px;  
+}
+.footer p {
+    font-size: 15px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .footer p {
+        font-size: 10px;
+    }
+}
+  

@@ -1,0 +1,82 @@
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.Contact .left {
+  margin-top: 1rem;
+  width: 30%;
+}
+.Contact .right {
+  width: 40%;
+  margin: 4rem;
+  height: fit-content;
+}
+.Contact .box {
+  padding: 20px;
+}
+.Contact .details h1 {
+  margin: 20px 0 20px 0;
+  font-size: 30px;
+}
+.Contact .details p {
+  font-size: 16px;
+}
+.Contact button {
+  margin-top: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.Contact .right {
+  padding: 30px;
+}
+.Contact .input span {
+  font-size: 13px;
+}
+.Contact input {
+  margin-top: 10px;
+  height: 1.5rem;
+}
+.Contact textarea {
+  height: 7rem;
+}
+.Contact .right button:hover {
+  color: white;
+}
+.Contact .right button i {
+  margin-left: 10px;
+}
+.cont-img{
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .Contact .d_flex {
+    flex-direction: column;
+  }
+  .Contact .left,
+  .Contact .right {
+    width: 95%;
+    margin: 25px auto;
+  }
+  .cont-img{
+    width: 75vw;
+    height: auto;
+  }
+  .Contact .title{
+    font-size: 30px;
+  }
+  .Contact .left p{
+    font-size: 13px;
+  }
+  .Contact .left a{
+    font-size: 13px;
+  }
+  .Contact .left h1{
+    font-size: 20px;
+  }
+  .Contact .box {
+    padding: 27px;
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "my-portfolio",
+  "version": "0.1.7",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "5.0.1"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.7.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "axios": "^0.27.2",
+    "nth-check": "^2.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-reveal": "^1.2.2",
+    "react-simple-typewriter": "^3.0.1",
+    "react-vertical-timeline-component": "^3.5.2",
+    "web-vitals": "^3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

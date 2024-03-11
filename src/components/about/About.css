@@ -1,0 +1,137 @@
+.abt{
+  display : flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+.abt-left{
+  margin: 0 auto;
+}
+.abt-right{
+  margin: 0 auto;
+  justify-content: center;
+  width: 55%;
+}
+.abt-card {
+  width: 400px;
+  height: 400px;
+}
+.abt-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding: 0.5rem;
+}
+.abt-right .btn_shadow {
+  width: 130px;
+}
+.abt-sub{
+  color: #00bfff;
+  /* top and bottom  || left and right */
+  margin: 20px 0px;
+}
+.abt-desc{
+  font-weight: 300;
+  margin: 10px auto;
+}
+.abt-right .btn_shadow{
+  margin-top: 2rem;
+  width: 7.5rem;
+}
+.abt-right p {
+  font-size: 21px;
+}
+
+.abt .rsm{
+  font-size: 1rem;
+}
+
+#about .title {
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .abt{
+    margin: 2rem 1rem;
+  }
+  .abt-card.bg {
+    bottom: 20px;
+    right: 60px;
+  }
+  .abt-card{
+    width: 250px;
+    height: 250px;
+  }
+  .abt .title {
+    margin-top: 20px;
+    font-size: 40px;
+    text-align: center;
+  }
+  .abt-right .btn_shadow {
+    width: 6rem;
+    margin: 2rem auto;
+  }
+  .abt .rsm{
+    font-size: 0.8rem;
+  }
+  .abt-con{
+    display: none;
+  }
+  .abt-right{
+    width: 100%;
+  }
+  .abt-right p {
+    font-size: 16px;
+  }
+}
+
+/* ---- timeline component ----- */
+.timeline { 
+  margin : 5rem 0.5rem;
+}
+.timeline.title {
+  font-size: 15em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+ .timeline h3 {
+  padding-top: 0.25em;
+}
+
+.timeline.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 1em 2em !important;
+}
+
+.timeline.date {
+  color: rgb(201, 251, 255);
+}
+
+.timeline .description {
+  margin: 1em 0 1em 0;
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  .timeline.vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+  .timeline h3 {
+    font-size: 16px;
+  }
+  .timeline h5 {
+    font-size: 14px;
+  }
+  .timeline .date{
+    font-size: 12px;
+  }
+  .timeline .description {
+    font-size: 13px;
+  }
+}

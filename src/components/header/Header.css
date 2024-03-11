@@ -1,0 +1,128 @@
+header {
+    /* vh : Relative to 1% of the height of the viewport, similarly vw for width*/
+    height: 10vh;
+    line-height: 10vh;
+}
+header .container{
+    padding-top: 15px;
+}
+header ul li {
+    /* spacing between list item, when they are horizontal */
+    margin-left: 30px;
+}
+
+/* applies style to anchor tag of list tag inside header tag */
+header ul li a {
+   transition: 0.5s;
+   font-size: 15px;
+   font-weight: 500;
+   letter-spacing: 1px;
+}
+header ul li a:hover {
+    color:  #00bfff;
+}
+
+img {
+    height: 7vh;
+    vertical-align: -2vh;
+    /*negative vertical-align prop shifts element down */
+}
+header h2{
+    /* display inline to make h2 tag appear in same line with logo image */
+    display: inline;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.home-btn {
+    padding: 18px 25px;
+    border-radius: 6px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    height: fit-content;
+    color:  #00bfff;
+}
+.home-btn {
+    /* creates an image consisting of a progressive transition between two or more colors along a straight line */
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+.home-btn:hover {
+    background:  #00bfff;
+    color: white;
+}
+/* On larger screen toggle button is not shown */
+.open {  
+    display: none;
+}    
+/* active class is activated on scroll, and thus these below property kicks in, on scroll    */
+.header.active {
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    /* background-color: #e4f0f7; */
+    box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    /* glass blur using backdrop-filter */
+}
+
+@media (max-width: 768px) {
+    /* @media changes  to above styles on change in width */
+    header ul {
+        padding-top: 30px;
+    }
+    .nav-links-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        left: 0;
+        top: 0;
+        transition: all 0.5s ease-in-out;
+        width: 60%;
+        height: 100vh;
+        background-color: white;
+        z-index: 888;
+    }
+    header ul li {
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        text-transform: uppercase;
+        line-height: 70px;
+    }
+     
+    /* Reason why nav link won't appear on small screen initially */
+    header .link {
+        display: none;
+    }
+    /* on mobile screen button with open tag, ie, fa-bar button appears */
+    .close,
+    .open {
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        color:  #00bfff;
+        display: block;
+        font-size: 25px;
+        z-index: 999;
+    }
+    .close {
+        right: 45%;
+    }
+    .close.home-btn {
+        background: linear-gradient(145deg, #e2e8ec, #ffffff);
+        color:  #00bfff;
+        border-radius: 50%;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .header.active {
+        height: 11vh;
+    }
+}
