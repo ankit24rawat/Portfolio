@@ -1,7 +1,7 @@
 import React from "react"
 import "./About.css"
 import logo from "../assets/logo.png";
-import Resume from "../assets/Resume_ChandanMishra.pdf";
+import Resume from "../assets/ankitResume.pdf";
 
 //React Reveal
 import Fade from 'react-reveal/Fade';
@@ -50,7 +50,7 @@ const Features = () => {
                 </p>
 
                 {/* download attribute in anchor tag, will download anything specified in href link and name it Chandan's Resume here
-                <a href={Resume} download="Resume_ChandanMishra"><b>Resume</b>
+                <a href={Resume} download="ankitResume"><b>Resume</b>
                     <i class="fas fa-arrow-down"></i>
                 </a> */}
                 <div style={{display: "flex", justifyContent: "center"}}>
@@ -60,7 +60,7 @@ const Features = () => {
                       <i className="fas fa-chevron-right"></i>
                     </div>
                   </a> */}
-                  <a style={{display: "inline-block"}} href={Resume} download="Resume_ChandanMishra">
+                  <a style={{display: "inline-block"}} href={Resume} download="ankitResume">
                     <div className="rsm btn_shadow">
                       <b>Resume&nbsp;</b>
                       <i className="fas fa-chevron-down"></i>
