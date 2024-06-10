@@ -95,7 +95,7 @@ const Contact = () => {
                   </div>
                   <button className='btn_shadow'>
                     SEND <i class='fas fa-arrow-right'></i>
-                  </button>
+                 
                 </form>
               </div>
             </Fade>
