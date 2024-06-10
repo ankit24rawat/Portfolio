@@ -93,8 +93,7 @@ const Contact = () => {
                     <span>YOUR MESSAGE </span>
                     <textarea cols='30' rows='10' name='message' value={data.message} onChange={InputEvent}></textarea>
                   </div>
-                  <button className='btn_shadow'>
-                    SEND <i class='fas fa-arrow-right'></i>
+                 
                  
                 </form>
               </div>
